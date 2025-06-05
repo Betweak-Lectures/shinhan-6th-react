@@ -10,6 +10,7 @@ import { useState } from "react";
 
 import ToggleButton from "./components/ToggleButton";
 import BannedWordPage from "./components/practices/BannedWordPage/BannedWordPage";
+import UserPublicApi from "./components/practices/UserPublicApi";
 
 function App() {
   // const [visible, setVisible] = useState(false);
@@ -18,7 +19,8 @@ function App() {
 
   return (
     <div>
-      <BannedWordPage />
+      {/* <BannedWordPage /> */}
+      <UserPublicApi />
       {/* <ExampleUseState /> */}
       {/* <ToggleButton /> */}
       {/* <button onClick={() => setVisible(!visible)}>보이기</button>
