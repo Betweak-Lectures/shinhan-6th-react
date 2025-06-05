@@ -53,14 +53,3 @@ export default function ExampleUseState() {
     </div>
   );
 }
-
-function sample() {
-  let count = 1;
-
-  return `
-  문자열: ${count}
-  `;
-}
-
-const a = sample();
-console.log(a);

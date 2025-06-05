@@ -9,18 +9,20 @@ import ExampleUseState from "./components/ExampleUseState";
 import { useState } from "react";
 
 import ToggleButton from "./components/ToggleButton";
+import BannedWordPage from "./components/practices/BannedWordPage/BannedWordPage";
 
 function App() {
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   // console.log("App 함수 호출");
 
   return (
     <div>
+      <BannedWordPage />
       {/* <ExampleUseState /> */}
       {/* <ToggleButton /> */}
-      <button onClick={() => setVisible(!visible)}>보이기</button>
-      {visible ? <CountComponent /> : null}
+      {/* <button onClick={() => setVisible(!visible)}>보이기</button>
+      {visible ? <CountComponent /> : null} */}
       {/* <BlinkCompnent text="이건 깜빡입니다." /> */}
     </div>
   );
