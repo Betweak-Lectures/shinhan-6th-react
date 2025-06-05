@@ -12,9 +12,6 @@ export default function CountComponent() {
 
   const addCount = () => {
     setCount(count + 1);
-    // setCount(1): 0번째 시점
-    // setCount(2): 1번째 시점
-    // setCount(3): 2번째 시점
   };
 
   // useEffect(callbackFn, dependencyArray):
