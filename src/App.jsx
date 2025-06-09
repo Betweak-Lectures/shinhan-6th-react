@@ -18,6 +18,16 @@ import Timer from "./components/practices/Timer";
 import FocusInputButton from "./components/FocusInputButton";
 import InputRefComponent from "./components/InputRefComponent";
 
+import PrimeCalculator from "./components/PrimeCalculator";
+import MemoExample from "./components/MemoExample/MemoExample";
+import CallbackExample from "./components/CallbackExample/CallbackExample";
+import { CallbackExample2 } from "./components/CallbackExample/CallbackExample2";
+import ContextExample from "./components/ContextExample/ContextExample";
+
+import BootstrapExample from "./components/BootstrapExample";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   // const [visible, setVisible] = useState(false);
 
@@ -29,7 +39,7 @@ function App() {
       {/* <InputRefComponent /> */}
       {/* <Timer /> */}
 
-      <StopWatch />
+      {/* <StopWatch /> */}
       {/* <BannedWordPage /> */}
       {/* <UserPublicApi /> */}
       {/* <ExampleUseState /> */}
@@ -37,6 +47,13 @@ function App() {
       {/* <button onClick={() => setVisible(!visible)}>보이기</button>
       {visible ? <CountComponent /> : null} */}
       {/* <BlinkCompnent text="이건 깜빡입니다." /> */}
+
+      {/* <PrimeCalculator text={10} /> */}
+      {/* <MemoExample /> */}
+      {/* <CallbackExample /> */}
+      {/* <CallbackExample2 /> */}
+      {/* <ContextExample /> */}
+      <BootstrapExample />
     </div>
   );
 }
