@@ -18,25 +18,31 @@ export default function UserPublicApi() {
   }, []);
 
   const addUser = ({ username, email }) => {
-    // 깊은 비교: Collection Data(Array, Object 등)의 경우 개별 값들 모두 일일이 비교.
-    // 얕은 비교: Collection Data(Array, Object 등)의 경우 참조값만 비교. (일반적인 메모리 주소값.)
-    // State비교는 얕은 비교!
-    // userArray.push({ username, email });
-    // setUserArray(userArray);
-
-    const newUserArray = [...userArray, { username, email }];
-    setUserArray(newUserArray);
+    userArray.push({ username, email });
+    setUserArray(userArray);
   };
+
+  //   const url = "https://jsonplaceholder.typicode.com/users";
+  //   fetch(url)
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setUserArray(data);
+  //     });
+
+  //   useEffect(() => {
+  //     async function fetchUser() {
+  //       const url = "https://jsonplaceholder.typicode.com/users";
+  //       const response = await fetch(url);
+  //       const data = await response.json();
+  //       setUserArray(data);
+  //     }
+  //     fetchUser();
+  //   }, []);
 
   return (
     <ul>
-      <button
-        onClick={() => {
-          addUser({ username: "새로운 유저", email: "sample@naver.com" });
-        }}
-      >
-        유저 추가
-      </button>
       {userArray.map((user) => {
         return (
           <li>

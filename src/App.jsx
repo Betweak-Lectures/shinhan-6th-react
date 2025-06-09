@@ -11,6 +11,12 @@ import { useState } from "react";
 import ToggleButton from "./components/ToggleButton";
 import BannedWordPage from "./components/practices/BannedWordPage/BannedWordPage";
 import UserPublicApi from "./components/practices/UserPublicApi";
+import StopWatch from "./components/practices/StopWatch";
+
+import Timer from "./components/practices/Timer";
+
+import FocusInputButton from "./components/FocusInputButton";
+import InputRefComponent from "./components/InputRefComponent";
 
 function App() {
   // const [visible, setVisible] = useState(false);
@@ -19,8 +25,13 @@ function App() {
 
   return (
     <div>
+      {/* <FocusInputButton /> */}
+      {/* <InputRefComponent /> */}
+      {/* <Timer /> */}
+
+      <StopWatch />
       {/* <BannedWordPage /> */}
-      <UserPublicApi />
+      {/* <UserPublicApi /> */}
       {/* <ExampleUseState /> */}
       {/* <ToggleButton /> */}
       {/* <button onClick={() => setVisible(!visible)}>보이기</button>
